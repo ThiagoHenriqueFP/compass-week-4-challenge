@@ -7,7 +7,7 @@ public class Application {
     public static void main(String[] args) {
         List<Vehicle> myVehicles = new ArrayList<>();
         try {
-            Vehicle hondaCivic = new Car(
+            Car hondaCivic = new Car(
                     "Honda Civic",
                     "V-Tech 2.2",
                     true,
@@ -20,7 +20,7 @@ public class Application {
                     2015
             );
 
-            Vehicle fusca = new Car(
+            Car fusca = new Car(
                     "Fusca 1600",
                     "Boxer 1.6",
                     true,
@@ -33,7 +33,7 @@ public class Application {
                     1965
             );
 
-            Vehicle yamahaFazer = new Motocicle(
+            Motocicle yamahaFazer = new Motocicle(
                     "Fazer",
                     "yz 250cc",
                     2,
@@ -43,7 +43,7 @@ public class Application {
                     2020
             );
 
-            Vehicle bike = new Bike(
+            Bike bike = new Bike(
                     "Absolute nero 4",
                     2,
                     true,
@@ -53,7 +53,7 @@ public class Application {
                     2023
             );
 
-            Vehicle truck = new Truck(
+            Truck truck = new Truck(
                     "Astralis",
                     "Cummins 8.4",
                     true,
