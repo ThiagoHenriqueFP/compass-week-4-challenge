@@ -3,8 +3,8 @@ package domain;
 public class Bike extends Vehicle{
     private boolean isElectric;
     private boolean hasBagager;
-    public Bike(int passengers, boolean isHeavyTransport, double carryingCapacity, boolean isElectric, boolean hasBagager, int year) {
-        super("none", false, passengers, 1, isHeavyTransport, carryingCapacity, year);
+    public Bike(String name, int passengers, boolean isHeavyTransport, double carryingCapacity, boolean isElectric, boolean hasBagager, int year) {
+        super(name, "none", false, passengers, 1, isHeavyTransport, carryingCapacity, year);
         setElectric(isElectric);
         setHasBagager(hasBagager);
     }

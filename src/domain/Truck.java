@@ -2,8 +2,8 @@ package domain;
 
 public class Truck extends Vehicle{
     private int AxisQuantity;
-    public Truck(String motor, boolean hasSteeringWheel, int passengers, int doors, boolean isHeavyTransport, double carryingCapacity, int axisQuantity, int year) {
-        super(motor, hasSteeringWheel, passengers, doors, isHeavyTransport, carryingCapacity, year);
+    public Truck(String name,String motor, boolean hasSteeringWheel, int passengers, int doors, boolean isHeavyTransport, double carryingCapacity, int axisQuantity, int year) {
+        super(name, motor, hasSteeringWheel, passengers, doors, isHeavyTransport, carryingCapacity, year);
         setAxisQuantity(axisQuantity);
     }
 

@@ -8,9 +8,11 @@ public class Vehicle {
     private boolean isHeavyTransport;
     private double carryingCapacity;
     private int year;
+    private String name;
     private final Fuel fuel;
 
-    public Vehicle(String motor, boolean hasSteeringWheel, int passengers, int doors, boolean isHeavyTransport, double carryingCapacity, int year) {
+    public Vehicle(String name,String motor, boolean hasSteeringWheel, int passengers, int doors, boolean isHeavyTransport, double carryingCapacity, int year) {
+        setName(name);
         setYear(year);
         setMotor(motor);
         setDoors(doors);
@@ -19,6 +21,16 @@ public class Vehicle {
         setCarryingCapacity(carryingCapacity);
         setHasSteeringWheel(hasSteeringWheel);
         this.fuel = new Fuel();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        if(name.isEmpty() || name.isBlank())
+            throw new IllegalArgumentException();
+        this.name = name;
     }
 
     public String getMotor() {

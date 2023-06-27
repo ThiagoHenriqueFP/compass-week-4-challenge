@@ -2,8 +2,8 @@ package domain;
 
 public class Motocicle extends Vehicle{
     private boolean hasElectricStart;
-    public Motocicle(String motor, int passengers, boolean isHeavyTransport, double carryingCapacity, boolean hasElectricStart, int year) {
-        super(motor, false, passengers, 1, isHeavyTransport, carryingCapacity, year);
+    public Motocicle(String name, String motor, int passengers, boolean isHeavyTransport, double carryingCapacity, boolean hasElectricStart, int year) {
+        super(name, motor, false, passengers, 1, isHeavyTransport, carryingCapacity, year);
         setHasElectricStart(hasElectricStart);
     }
 

@@ -8,6 +8,7 @@ public class Application {
         List<Vehicle> myVehicles = new ArrayList<>();
 
         Vehicle hondaCivic = new Car(
+                "Honda Civic",
                 "V-Tech 2.2",
                 true,
                 5,
@@ -20,6 +21,7 @@ public class Application {
         );
 
         Vehicle fusca = new Car(
+                "Fusca 1600",
                 "Boxer 1.6",
                 true,
                 4,
@@ -32,6 +34,7 @@ public class Application {
         );
 
         Vehicle yamahaFazer = new Motocicle(
+                "Fazer",
                 "yz 250cc",
                 2,
                 false,
@@ -41,6 +44,7 @@ public class Application {
         );
 
         Vehicle bike = new Bike(
+                "Absolute nero 4",
                 2,
                 true,
                 200,
@@ -50,6 +54,7 @@ public class Application {
         );
 
         Vehicle truck = new Truck(
+                "Astralis",
                 "Cummins 8.4",
                 true,
                 2,
@@ -66,7 +71,13 @@ public class Application {
         myVehicles.add(bike);
         myVehicles.add(truck);
 
-
+        myVehicles.forEach(
+                it -> {
+                    System.out.println("Vehicle " + it.getName());
+                    System.out.println("Vehicle " + it.getYear());
+                    System.out.println("------------------------");
+                }
+        );
     }
 
 }
