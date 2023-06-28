@@ -14,4 +14,11 @@ public class Motocicle extends Vehicle{
     public void setHasElectricStart(boolean hasElectricStart) {
         this.hasElectricStart = hasElectricStart;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", hasElectricStart=" + hasElectricStart +
+                "}";
+    }
 }

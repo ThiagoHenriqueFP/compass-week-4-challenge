@@ -24,4 +24,12 @@ public class Car extends Vehicle{
     public void setHasRadio(boolean hasRadio) {
         this.hasRadio = hasRadio;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", hasAirConditioner=" + hasAirConditioner +
+                ", hasRadio=" + hasRadio +
+                "}";
+    }
 }

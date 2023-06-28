@@ -24,4 +24,12 @@ public class Bike extends Vehicle{
     public void setHasBagager(boolean hasBagager) {
         this.hasBagager = hasBagager;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", isElectric=" + isElectric +
+                ", hasBagager=" + hasBagager +
+                "}";
+    }
 }

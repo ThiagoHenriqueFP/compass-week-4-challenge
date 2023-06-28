@@ -118,4 +118,19 @@ public class Vehicle {
             throw new IllegalArgumentException();
         this.year = year;
     }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "name='" + name + '\'' +
+                ", motor='" + motor + '\'' +
+                ", hasSteeringWheel=" + hasSteeringWheel +
+                ", passengers=" + passengers +
+                ", doors=" + doors +
+                ", isHeavyTransport=" + isHeavyTransport +
+                ", carryingCapacity=" + carryingCapacity +
+                ", year=" + year +
+                ", fuel=" + fuel +
+                '}';
+    }
 }

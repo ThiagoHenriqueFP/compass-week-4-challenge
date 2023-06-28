@@ -29,4 +29,10 @@ public class Fuel {
         this.type = FuelType.ANIMAL;
     }
 
+    @Override
+    public String toString() {
+        return "Fuel{" +
+                "type=" + type +
+                '}';
+    }
 }

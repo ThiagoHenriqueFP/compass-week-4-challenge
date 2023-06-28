@@ -79,6 +79,8 @@ public class Application {
                         System.out.println("------------------------");
                     }
             );
+
+            myVehicles.forEach(System.out::println);
         } catch (Exception e) {
             e.printStackTrace();
         }
